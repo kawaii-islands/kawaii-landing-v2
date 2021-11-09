@@ -1,0 +1,349 @@
+.partner {
+    padding: 50px 0px 70px;
+    position: relative;
+    :global {
+        .react-multi-carousel-item {
+            justify-content: center;
+        }
+        .react-multi-carousel-dot {
+            button {
+                background: #ffceba;
+                border: none;
+            }
+        }
+        .react-multi-carousel-dot--active {
+            button {
+                background: #ed652c;
+            }
+        }
+    }
+
+    .title {
+        position: relative;
+        padding: 10px;
+        line-height: 1;
+        margin: auto;
+
+        .name {
+            z-index: 2;
+            font-size: 50px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: Mali-SemiBold;
+            text-align: center;
+            position: relative;
+            @media (max-width: 768px) {
+                font-size: 31px;
+            }
+            @media (max-width: 600px) {
+                font-size: 22px;
+            }
+            @media (max-width: 400px) {
+                font-size: 14px;
+            }
+        }
+
+        .frame {
+            background: url("../../../public/images/images/team-titlebar.svg");
+            background-size: 100% 100%;
+            position: absolute;
+            height: 135%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            min-width: 50%;
+            max-width: 90%;
+
+            @media (min-width: 1800px) {
+                height: 170%;
+            }
+        }
+    }
+
+    .content {
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+            .logo {
+                cursor: pointer;
+                max-height: 128px;
+                @media (max-width: 1129px) {
+                    max-height: 100px;
+                }
+                @media (max-width: 890px) {
+                    max-height: 70px;
+                }
+                @media (max-width: 648px) {
+                    max-height: 60px;
+                }
+                @media (max-width: 512px) {
+                    max-height: 40px;
+                }
+            }
+        }
+    }
+
+    .board {
+        background-image: url("../../../public/images/images/partner-board.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        width: 80%;
+        padding: 50px;
+        @media (max-width: 1200px) {
+            width: 90%;
+        }
+        @media (max-width: 1000px) {
+            padding: 35px;
+        }
+
+        // @media (max-width: 768px) {
+        //     padding: 0px;
+        // }
+        @media (max-width: 600px) {
+            padding: 20px;
+        }
+    }
+
+    .board-mobile {
+        background-image: url("../../../public/images/images/partner-board-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        width: 80%;
+        padding: 50px;
+        @media (max-width: 1200px) {
+            width: 90%;
+        }
+        @media (max-width: 1000px) {
+            padding: 35px;
+        }
+
+        // @media (max-width: 768px) {
+        //     padding: 0px;
+        // }
+        @media (max-width: 600px) {
+            padding: 20px;
+        }
+    }
+    .item {
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            padding: 20px 0;
+        }
+        @media (max-width: 600px) {
+            padding: 10px 0;
+        }
+
+        .logo {
+            // width: 70%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.bottom {
+    background-image: url("../../../public/images/images/parner-btm-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom center;
+
+    @media (max-width: 1500px) {
+        background-size: contain;
+    }
+
+    @media (max-width: 1279px) {
+        background-image: url("../../../public/images/images/partner-bottom-mobile.png");
+    }
+
+    .follow {
+        font-size: 22px;
+        color: #1c6079;
+        font-weight: 500;
+        font-family: "Mali-Medium";
+        margin-bottom: 30px;
+        padding-top: 40px;
+        text-align: center;
+        @media (max-width: 1199px) {
+            font-size: 18px;
+        }
+        @media (max-width: 600px) {
+            padding-top: 10px;
+            font-size: 16px;
+        }
+    }
+
+    .social-icon {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 1279px) {
+            padding-bottom: 50px;
+        }
+        img {
+            width: 50px;
+            height: auto;
+            margin: 0 4px;
+            max-width: 10%;
+            @media (max-width: 600px) {
+                width: 40px;
+            }
+        }
+        img:hover {
+            cursor: pointer;
+        }
+    }
+
+    .middle {
+        margin: auto 0;
+
+        .farewell {
+            font-size: 35px;
+            font-stretch: expanded;
+            color: #1c6079;
+            font-weight: 600;
+            font-family: "Mali-SemiBold";
+            text-align: center;
+            margin-bottom: 33px;
+
+            @media (max-width: 600px) {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .signup {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 0 10px;
+
+            @media (max-width: 1279px) {
+                display: block;
+            }
+
+            input {
+                flex-grow: 1;
+                // min-width: 400px;
+                // height: 50px;
+                border-radius: 5px;
+                background-color: #ffffff;
+                border: 1px solid rgba(5, 7, 8, 0.2);
+                margin-right: 18px;
+                font-size: 25px;
+                color: #000000;
+                font-weight: 500;
+                font-family: "Mali-Medium";
+                padding: 10px;
+
+                @media (max-width: 1279px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+
+            button {
+                border-radius: 5px;
+                background-color: #d2414c;
+                font-size: 19px;
+                color: #ffffff;
+                font-weight: 600;
+                font-family: "Mali-SemiBold";
+                text-align: center;
+                padding: 0px 20px;
+                border: none;
+                padding: 5px;
+
+                @media (max-width: 1279px) {
+                    width: 100%;
+                    font-size: 25px;
+                    margin-bottom: 200px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 25px;
+                    margin-bottom: 50px;
+                }
+                @media (max-width: 600px) {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .nav-links {
+            justify-content: center;
+            display: flex;
+            font-size: 25px;
+            color: #1c6079;
+            font-weight: 500;
+            font-family: "Mali-Medium";
+            padding: 100px 0 75px;
+            @media (max-width: 1279px) {
+                display: none;
+            }
+
+            a {
+                padding: 0 25px;
+                color: #1c6079;
+            }
+
+            a:hover {
+                cursor: pointer;
+                color: #1c6079;
+            }
+        }
+
+        .copyright {
+            font-size: 22px;
+            color: #1c6079;
+            font-weight: 500;
+            font-family: "Mali-Medium";
+            text-align: center;
+            padding-bottom: 30px;
+
+            @media (max-width: 1279px) {
+                // padding-bottom: 50px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 19px;
+            }
+
+            @media (max-width: 600px) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .right {
+        text-align: center;
+        .logo {
+            text-align: right;
+            width: 70%;
+            @media (max-width: 1279px) {
+                width: 435px;
+            }
+            @media (max-width: 871px) {
+                width: 50%;
+            }
+        }
+    }
+}

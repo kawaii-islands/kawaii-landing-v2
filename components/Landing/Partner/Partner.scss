@@ -1,0 +1,35 @@
+#mlb2-4559794.ml-form-embedContainer .ml-form-embedWrapper {
+    background-color: transparent!important;
+}
+
+#mlb2-4559794.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input{
+    border-radius: 5px!important;
+    border: 1px solid rgba(5,7,8,.2)!important;
+    font-size: 25px!important;
+    color: #000!important;
+    font-weight: 500!important;
+    font-family: "Mali-Medium"!important;
+    padding: 10px!important;
+    height: 54px!important;
+}
+
+#mlb2-4559794.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button{
+    border-radius: 5px!important;
+    background-color: #d2414c!important;
+    font-size: 19px!important;
+    color: #fff!important;
+    font-weight: 600!important;
+    font-family: "Mali-SemiBold"!important;
+    text-align: center!important;
+    border: none!important;
+    padding: 10px!important;
+    height: 54px!important;
+}
+
+#mlb2-4559794.ml-form-embedContainer .ml-form-embedWrapper.embedForm{
+    max-width: unset!important;
+}
+
+#mlb2-4559794.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover{
+    background-color: #d2414c!important;
+}

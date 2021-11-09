@@ -1,0 +1,186 @@
+.nav-dropdown :global(.nav-link),
+.nav-link {
+    padding: 0;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 150%;
+    color: #ffffff !important;
+    background-color: transparent;
+    position: relative;
+    margin: 0 55px 0 0;
+    white-space: nowrap;
+    font-family: Mali-SemiBold;
+    cursor: pointer;
+
+    @media (max-width: 1199px) {
+        margin: 0;
+        padding: 17px 20px 17px 34px !important;
+        max-width: 250px;
+        line-height: 10px;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &::after {
+            content: " ";
+            float: right;
+            border: solid #ffffff;
+            border-width: 0 2px 2px 0;
+            padding: 3px;
+            transform: rotate(-45deg);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 51%;
+            right: 51%;
+            bottom: -5px;
+            background: #f1f1f1;
+            height: 4px;
+            border-radius: 2px;
+            transition-property: left, right;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+        }
+    }
+
+    &:global(.active)::before,
+    &:hover::before {
+        left: 0;
+        right: 0;
+    }
+}
+
+.play-now {
+    background: #d2414c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 150%;
+    color: #ffffff !important;
+    position: relative;
+    margin: 0 55px 0 0;
+    white-space: nowrap;
+    font-family: Mali-SemiBold;
+    cursor: pointer;
+
+    @media (max-width: 1199px) {
+        margin: 0;
+        padding: 10px !important;
+        margin-left: 34px;
+        max-width: 250px;
+        line-height: 10px;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: 1200px) {
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 51%;
+            right: 51%;
+            bottom: -5px;
+            // background: #f1f1f1;
+            height: 4px;
+            border-radius: 2px;
+            transition-property: left, right;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-out;
+        }
+    }
+
+    &:global(.active)::before,
+    &:hover::before {
+        left: 0;
+        right: 0;
+    }
+}
+
+.icon {
+    margin-right: 35px;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.icon:hover::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: -5px;
+    background: #f1f1f1;
+    height: 4px;
+    border-radius: 2px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.nav-dropdown :global(.nav-link) {
+    width: fit-content;
+    &::after {
+        display: none;
+    }
+}
+
+.nav-dropdown {
+    width: 100%;
+    :global(.dropdown-toggle) {
+        border-bottom: none;
+    }
+
+    :global(.dropdown-menu) {
+        top: 35px;
+        background-color: #944b50;
+        border: none;
+        left: 0px;
+        border-radius: 8px;
+        @media (min-width: 1200px) {
+            padding: 0px;
+            background-color: #944b50;
+        }
+    }
+
+    :global(.dropdown-item) {
+        width: 100%;
+        padding: 15px 0px 17px 54px;
+        font-family: Mali-Medium;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #ffffff;
+        background-color: transparent;
+        border-radius: 8px;
+
+        @media (min-width: 1200px) {
+            padding: 10px 15px 10px 16px;
+            background-color: #944b50;
+        }
+    }
+
+    :global(.dropdown-item:hover) {
+        background-color: #a35459;
+    }
+
+    :global(.dropdown-item.active) {
+        background-color: #a35459;
+        border-right: 5px solid #1a87ff;
+    }
+}

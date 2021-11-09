@@ -1,0 +1,195 @@
+.roadmap {
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @media(max-width: 1199px){
+        padding: 0;
+    }
+    .background {
+        width: 100%;
+    }
+    .move-cloud-1 {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        animation: fly-x 30s ease-in-out 0s infinite;
+        -webkit-animation: fly-x 30s ease-in-out 0s infinite;
+        -moz-animation: fly-x 30s ease-in-out 0s infinite;
+        -o-animation: fly-x 30s ease-in-out 0s infinite;
+    }
+    .move-cloud-2 {
+        position: absolute;
+        bottom: 37%;
+        right: 80px;
+        animation: fly-x 30s ease-in-out 0.5s infinite;
+        -webkit-animation: fly-x 30s ease-in-out 0.5s infinite;
+        -moz-animation: fly-x 30s ease-in-out 0.5s infinite;
+        -o-animation: fly-x 30s ease-in-out 0.5s infinite;
+    }
+    .move-cloud-3 {
+        position: absolute;
+        bottom: 30%;
+        right: 120px;
+        animation: fly-x 30s ease-in-out 0s infinite;
+        -webkit-animation: fly-x 30s ease-in-out 0s infinite;
+        -moz-animation: fly-x 30s ease-in-out 0s infinite;
+        -o-animation: fly-x 30s ease-in-out 0s infinite;
+    }
+    .boat-1 {
+        position: absolute;
+        top: 50px;
+        right: 250px;
+        animation: fly-y 30s ease-in-out 0s infinite;
+        -webkit-animation: fly-y 30s ease-in-out 0s infinite;
+        -moz-animation: fly-y 30s ease-in-out 0s infinite;
+        -o-animation: fly-y 30s ease-in-out 0s infinite;
+    }
+    .boat-2 {
+        position: absolute;
+        bottom: 20px;
+        left: 500px;
+        animation: fly-y 30s ease-in-out 0.5s infinite;
+        -webkit-animation: fly-y 30s ease-in-out 0.5s infinite;
+        -moz-animation: fly-y 30s ease-in-out 0.5s infinite;
+        -o-animation: fly-y 30s ease-in-out 0.5s infinite;
+    }
+    .boat-3 {
+        position: absolute;
+        bottom: 50px;
+        left: 150px;
+        animation: fly-y 30s ease-in-out 1s infinite;
+        -webkit-animation: fly-y 30s ease-in-out 1s infinite;
+        -moz-animation: fly-y 30s ease-in-out 1s infinite;
+        -o-animation: fly-y 30s ease-in-out 1s infinite;
+    }
+}
+
+@keyframes fly-y {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@-moz-keyframes fly-y {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@-o-keyframes fly-y {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@-webkit-keyframes fly-y {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes fly-x {
+    0%, 100% {
+        transform: translateX(0px) scaleX(1);
+    }
+
+    12.5%, 87.5% {
+        transform: translateX(-7.5px) scaleX(0.9);
+    }
+
+    25%, 75% {
+        transform: translateX(-15px) scaleX(1.1);
+    }
+
+    37.5%, 62.5% {
+        transform: translateX(-22.5px) scaleX(0.9);
+    }
+
+    50% {
+        transform: translateX(-30px) scaleX(1);
+    }
+}
+
+@-moz-keyframes fly-x {
+    0%, 100% {
+        transform: translateX(0px) scaleX(1);
+    }
+
+    12.5%, 87.5% {
+        transform: translateX(-7.5px) scaleX(0.9);
+    }
+
+    25%, 75% {
+        transform: translateX(-15px) scaleX(1.1);
+    }
+
+    37.5%, 62.5% {
+        transform: translateX(-22.5px) scaleX(0.9);
+    }
+
+    50% {
+        transform: translateX(-30px) scaleX(1);
+    }
+}
+
+@-webkit-keyframes fly-x {
+    0%, 100% {
+        transform: translateX(0px) scaleX(1);
+    }
+
+    12.5%, 87.5% {
+        transform: translateX(-7.5px) scaleX(0.9);
+    }
+
+    25%, 75% {
+        transform: translateX(-15px) scaleX(1.1);
+    }
+
+    37.5%, 62.5% {
+        transform: translateX(-22.5px) scaleX(0.9);
+    }
+
+    50% {
+        transform: translateX(-30px) scaleX(1);
+    }
+}
+
+@-o-keyframes fly-x {
+    0%, 100% {
+        transform: translateX(0px) scaleX(1);
+    }
+
+    12.5%, 87.5% {
+        transform: translateX(-7.5px) scaleX(0.9);
+    }
+
+    25%, 75% {
+        transform: translateX(-15px) scaleX(1.1);
+    }
+
+    37.5%, 62.5% {
+        transform: translateX(-22.5px) scaleX(0.9);
+    }
+
+    50% {
+        transform: translateX(-30px) scaleX(1);
+    }
+}

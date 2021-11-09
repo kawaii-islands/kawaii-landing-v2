@@ -1,0 +1,149 @@
+.advisor {
+    // background-color: #f9f6f2;
+    background-image: url("../../../public/images/images/advisor-island.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    // background-size: contain;
+    background-size: 64vw auto;
+    margin-top: 55px;
+    padding: 50px 50px 500px;
+
+    @media (min-width: 1921px) {
+        background-size: auto 100%;
+    }
+
+    @media (max-width: 1300px) {
+        padding: 20px 30px 350px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px 30px 210px;
+    }
+
+    .title {
+        font-size: 50px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: Mali-SemiBold;
+        text-align: center;
+        margin-bottom: 50px;
+        background-image: url("../../../public/images/images/team-titlebar.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 20px;
+        line-height: 1;
+
+        @media (max-width: 768px) {
+            font-size: 31px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            font-size: 22px;
+        }
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1147px;
+        margin: 0 auto;
+
+        .mem {
+            margin: auto;
+            // width: 310px;
+            @media (max-width: 768px) {
+                padding: 10px 0px;
+            }
+            .circle {
+                width: 256px;
+                height: 256px;
+                border-radius: 50%;
+                margin: 0px auto 30px;
+                display: block;
+                position: relative;
+                z-index: 2;
+                background: white;
+
+                @media (max-width: 1199px) {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                @media (max-width: 768px) {
+                    margin-bottom: 5px;
+                }
+
+                .border {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                }
+
+                .avatar {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    position: absolute;
+                    z-index: 1;
+                    padding: 15px;
+                    @media (max-width: 1199px) {
+                        padding: 12px;
+                    }
+                }
+
+                .linkedin {
+                    position: absolute;
+                    right: 10px;
+                    z-index: 4;
+                    bottom: 0;
+                    cursor: pointer;
+                    @media (max-width: 768px) {
+                        width: 50px;
+                        bottom: 5px;
+                    }
+                }
+
+                .laurel {
+                    position: absolute;
+                    left: -10px;
+                    z-index: 4;
+                    top: -10px;
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+            .name {
+                font-size: 44px;
+                color: #ae444c;
+                font-weight: 500;
+                font-family: "Mali-Medium";
+                text-align: center;
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+            }
+            .role {
+                font-size: 19px;
+                color: #ae444c;
+                font-weight: normal;
+                font-family: Mali-Medium;
+                text-align: center;
+                @media (max-width: 768px) {
+                    font-size: 13px;
+                }
+
+                a {
+                    color: #ae444c;
+                }
+
+                a:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
