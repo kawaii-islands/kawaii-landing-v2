@@ -4,52 +4,39 @@ import cn from "classnames/bind";
 import styles from "./Banner.module.scss";
 // import "./Banner.scss";
 import { Modal } from "react-bootstrap";
+import { useCheckMobileScreen } from "../../../utils/hooks";
 
 const cx = cn.bind(styles);
 
 const Banner: React.FC<{}> = ({ }) => {
     const [show, setShow] = useState(false);
+    const isMobile = useCheckMobileScreen(1665);
     return (
         <>
             <div className={cx("banner")}>
                 <div className={cx("left")}>
                     <img
                         src="/images/images/top-island.png"
-                        // src={
-                        //     require("/images/images/top-island.png").default
-                        // }
                         className={cx("top-island")}
-                    // alt=""
                     />
                     <img
                         src="/images/images/boat1.png"
-                        // src={require("/images/images/boat1.png").default}
                         className={cx("boat1")}
                     />
                     <img
                         src="/images/images/boat2.png"
-                        // src={require("/images/images/boat2.png").default}
                         className={cx("boat2")}
                     />
                     <img
                         src="/images/images/boat3.png"
-                        // src={require("/images/images/boat3.png").default}
                         className={cx("boat3")}
                     />
                     <img
                         src="/images/images/move-cloud-1.png"
-                        // src={
-                        //     require("/images/images/move-cloud-1.png")
-                        //         .default
-                        // }
                         className={cx("move-cloud1")}
                     />
                     <img
                         src="/images/images/move-cloud-2.png"
-                        // src={
-                        //     require("/images/images/move-cloud-2.png")
-                        //         .default
-                        // }
                         className={cx("move-cloud2")}
                     />
                 </div>
@@ -57,20 +44,15 @@ const Banner: React.FC<{}> = ({ }) => {
                     <div className={cx("logo")}>
                         <img
                             src="/images/images/top-logo.png"
-                        // src={
-                        //     require("/images/images/top-logo.png")
-                        //         .default
-                        // }
                         />
                     </div>
 
                     <div className={cx("title")}>
                         <img
-                            src="/images/images/T.png"
-                        // src={require("/images/images/T.png").default} 
+                            src="/images/images/A.png"
                         />
                         <div className={cx("text")}>
-                            he most enchanting play-to-earn game
+                            n Enchanting {isMobile && <br />} Anime Metaverse
                         </div>
                     </div>
                     <div className={cx("description")}>
@@ -90,28 +72,16 @@ const Banner: React.FC<{}> = ({ }) => {
                             >
                                 <img
                                     src="/images/images/playnow.png"
-                                // src={
-                                //     require("/images/images/playnow.png")
-                                //         .default
-                                // }
                                 />
                             </a>
                             <div className={cx("buttons-button")}>
                                 <img
                                     src="/images/images/appstore.png"
-                                // src={
-                                //     require("/images/images/appstore.png")
-                                //         .default
-                                // }
                                 />
                             </div>
                             <div className={cx("buttons-button")}>
                                 <img
                                     src="/images/images/ggplay.png"
-                                // src={
-                                //     require("/images/images/ggplay.png")
-                                //         .default
-                                // }
                                 />
                             </div>
                         </div>
@@ -130,39 +100,28 @@ const Banner: React.FC<{}> = ({ }) => {
                 <div className={cx("logo")}>
                     <img
                         src="/images/images/top-logo.png"
-                    // src={require("/images/images/top-logo.png").default}
                     />
                 </div>
 
                 <div className={cx("title")}>
-                    <img
-                        src="/images/images/T.png"
-                    // src={require("/images/images/T.png").default}
-                    />
                     <div className={cx("text")}>
-                        he most enchanting play-to-earn game
+                        An Enchanting Anime Metaverse
                     </div>
                 </div>
                 <div className={cx("island")}>
                     <img
-                        // src={
-                        //     require("/images/images/top-island.png").default
-                        // }
                         src="/images/images/top-island.png"
                         className={cx("top-island")}
                     />
                     <img
                         src="/images/images/boat1.png"
-                        // src={require("/images/images/boat1.png").default}
                         className={cx("boat1")}
                     />
                     <img
-                        // src={require("/images/images/boat2.png").default}
                         src="/images/images/boat2.png"
                         className={cx("boat2")}
                     />
                     <img
-                        // src={require("/images/images/boat3.png").default}
                         src="/images/images/boat3.png"
                         className={cx("boat3")}
                     />
@@ -186,26 +145,16 @@ const Banner: React.FC<{}> = ({ }) => {
                         rel="noreferrer"
                     >
                         <img
-                            // src={
-                            //     require("images/images/playnow.png").default
-                            // }
                             src="images/images/playnow.png"
                         />
                     </a>
                     <div className={cx("buttons-button")}>
                         <img
-                            // src={
-                            //     require("/images/images/appstore.png")
-                            //         .default
-                            // }
                             src="/images/images/appstore.png"
                         />
                     </div>
                     <div className={cx("buttons-button")}>
                         <img
-                            // src={
-                            //     require("/images/images/ggplay.png").default
-                            // }
                             src="/images/images/ggplay.png"
                         />
                     </div>

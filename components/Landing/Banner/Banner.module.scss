@@ -4,39 +4,49 @@
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    padding-right: 50px;
+    padding-right: 20px;
+
     @media (max-width: 1199px) {
         display: none;
     }
+
     .buttons {
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
         width: 100%;
+
         &-button {
             // width: 30%;
             text-align: center;
             margin-right: 5px;
+
             .text {
                 font-family: Mali-SemiBold;
                 font-size: 14px;
             }
+
             img {
                 width: 100%;
                 // height: 33px;
                 margin-bottom: 13px;
             }
         }
-        &-button:last-child{
+
+        &-button:last-child {
             margin: 0;
         }
     }
+
     .left {
         position: relative;
         height: fit-content;
+
         .top-island {
             width: 95%;
+            padding-top: 20px;
         }
+
         .boat1 {
             position: absolute;
             top: 120px;
@@ -46,6 +56,7 @@
             -moz-animation: fly-y 30s ease-in-out 0s infinite;
             -o-animation: fly-y 30s ease-in-out 0s infinite;
         }
+
         .boat2 {
             position: absolute;
             bottom: 140px;
@@ -55,6 +66,7 @@
             -moz-animation: fly-y 30s ease-in-out 0.5s infinite;
             -o-animation: fly-y 30s ease-in-out 0.5s infinite;
         }
+
         .boat3 {
             position: absolute;
             bottom: -30px;
@@ -64,6 +76,7 @@
             -moz-animation: fly-y 30s ease-in-out 1s infinite;
             -o-animation: fly-y 30s ease-in-out 1s infinite;
         }
+
         .move-cloud1 {
             position: absolute;
             bottom: 30px;
@@ -73,6 +86,7 @@
             -moz-animation: fly-x 30s ease-in-out 0s infinite;
             -o-animation: fly-x 30s ease-in-out 0s infinite;
         }
+
         .move-cloud2 {
             position: absolute;
             bottom: -150px;
@@ -83,28 +97,35 @@
             -o-animation: fly-x 30s ease-in-out 0.5s infinite;
         }
     }
+
     .intro {
         max-width: 600px;
         width: 33.3%;
+
         @media (max-width: 1665px) {
             width: 27%;
         }
+
         @media (max-width: 1327px) {
             width: 25%;
         }
+
         .logo {
             text-align: right;
+
             @media (max-width: 1665px) {
                 img {
                     width: 350px;
                 }
             }
+
             @media (max-width: 1327px) {
                 img {
                     width: 300px;
                 }
             }
         }
+
         .title {
             display: flex;
             align-items: flex-end;
@@ -113,17 +134,21 @@
             font-weight: 600;
             font-family: Mali-Bold;
             margin-bottom: 13px;
+            margin-left: 30px;
+
             @media (max-width: 1665px) {
                 font-size: 22px;
             }
+
             @media (max-width: 1327px) {
                 font-size: 20px;
             }
+
             .text {
-                position: relative;
-                left: -20px;
+                margin-left: 4px;
             }
         }
+
         .description {
             font-size: 19px;
             color: #ae444c;
@@ -132,16 +157,20 @@
             max-width: 500px;
             margin-left: 30px;
             margin-bottom: 30px;
+
             @media (max-width: 1665px) {
                 font-size: 17px;
             }
+
             @media (max-width: 1327px) {
                 font-size: 15px;
             }
         }
+
         .block {
             width: fit-content;
             margin: 0 auto;
+
             .coming_soon {
                 font-size: 36px;
                 letter-spacing: 2px;
@@ -151,10 +180,12 @@
                 filter: drop-shadow(0px 1px 4.5px rgba(194, 82, 91, 0.72));
                 text-align: center;
                 margin-bottom: 10px;
+
                 @media (max-width: 1327px) {
                     font-size: 30px;
                 }
             }
+
             .button {
                 width: 300px;
                 height: 50px;
@@ -166,6 +197,7 @@
                 font-family: "Mali-SemiBold";
                 text-align: center;
                 border: none;
+
                 @media (max-width: 1327px) {
                     font-size: 30px;
                     width: 250px;
@@ -181,6 +213,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0 50px 100px 50px;
+
     .buttons {
         display: flex;
         justify-content: space-between;
@@ -189,31 +222,39 @@
         width: 100%;
         max-width: 500px;
         margin-bottom: 20px;
+
         &-button {
             // width: 30%;
             text-align: center;
             margin-right: 5px;
+
             .text {
                 font-family: Mali-SemiBold;
                 font-size: 14px;
-                color: #ae444c;;
+                color: #ae444c;
+                ;
             }
+
             img {
                 width: 100%;
                 // height: 33px;
                 margin-bottom: 13px;
             }
         }
-        &-button:last-child{
+
+        &-button:last-child {
             margin: 0;
         }
     }
+
     @media (min-width: 1200px) {
         display: none;
     }
+
     @media (max-width: 600px) {
         padding: 0 20px;
     }
+
     .logo {
         img {
             @media (max-width: 466px) {
@@ -221,6 +262,7 @@
             }
         }
     }
+
     .title {
         display: flex;
         align-items: flex-end;
@@ -229,24 +271,29 @@
         font-weight: 600;
         font-family: Mali-Bold;
         margin-bottom: 13px;
+
         @media (max-width: 951px) {
             font-size: 30px;
         }
+
         @media (max-width: 757px) {
             font-size: 22px;
         }
+
         .text {
             position: relative;
-            left: -20px;
         }
     }
+
     .island {
         position: relative;
         height: fit-content;
         margin-bottom: 30px;
+
         .top-island {
             width: 100%;
         }
+
         .boat1 {
             position: absolute;
             top: 50px;
@@ -255,14 +302,17 @@
             -webkit-animation: fly-y 30s ease-in-out 0s infinite;
             -moz-animation: fly-y 30s ease-in-out 0s infinite;
             -o-animation: fly-y 30s ease-in-out 0s infinite;
+
             @media (max-width: 800px) {
                 width: 70px;
             }
+
             @media (max-width: 446px) {
                 top: 0;
                 width: 40px;
             }
         }
+
         .boat2 {
             position: absolute;
             bottom: 50px;
@@ -271,13 +321,16 @@
             -webkit-animation: fly-y 30s ease-in-out 0.5s infinite;
             -moz-animation: fly-y 30s ease-in-out 0.5s infinite;
             -o-animation: fly-y 30s ease-in-out 0.5s infinite;
+
             @media (max-width: 600px) {
                 bottom: 0;
             }
+
             @media (max-width: 446px) {
                 width: 40px;
             }
         }
+
         .boat3 {
             position: absolute;
             bottom: 0;
@@ -286,19 +339,23 @@
             -webkit-animation: fly-y 30s ease-in-out 1s infinite;
             -moz-animation: fly-y 30s ease-in-out 1s infinite;
             -o-animation: fly-y 30s ease-in-out 1s infinite;
+
             @media (max-width: 800px) {
                 width: 200px;
             }
+
             @media (max-width: 600px) {
                 left: -50px;
                 bottom: 0px;
             }
+
             @media (max-width: 466px) {
                 width: 100px;
                 left: 0;
             }
         }
     }
+
     .description {
         font-size: 39px;
         color: #ae444c;
@@ -307,26 +364,32 @@
         max-width: 1000px;
         margin-left: 30px;
         margin-bottom: 30px;
+
         @media (max-width: 900px) {
             font-size: 30px;
         }
+
         @media (max-width: 657px) {
             font-size: 25px;
         }
+
         @media (max-width: 600px) {
             font-size: 16px;
         }
     }
+
     .block {
         margin-top: 30px;
         width: fit-content;
         margin: 0 auto;
+
         @media (max-width: 461px) {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         .coming_soon {
             font-size: 46px;
             letter-spacing: 2px;
@@ -336,11 +399,13 @@
             filter: drop-shadow(0px 1px 4.5px rgba(194, 82, 91, 0.72));
             text-align: center;
             margin-bottom: 10px;
+
             @media (max-width: 461px) {
                 font-size: 35px;
                 width: fit-content;
             }
         }
+
         .button {
             width: 369px;
             height: 50px;
@@ -352,6 +417,7 @@
             font-family: "Mali-SemiBold";
             text-align: center;
             border: none;
+
             @media (max-width: 461px) {
                 width: 300px;
             }
@@ -369,6 +435,7 @@
             background-color: transparent;
             border: none;
         }
+
         .modal-body {
             padding: 0;
         }
@@ -384,6 +451,7 @@
         margin-bottom: 5px;
         cursor: pointer;
         z-index: 100;
+
         @media (max-width: 768px) {
             display: none;
         }
@@ -408,6 +476,7 @@
 }
 
 @keyframes fly-y {
+
     0%,
     100% {
         transform: translateY(0px);
@@ -419,6 +488,7 @@
 }
 
 @-moz-keyframes fly-y {
+
     0%,
     100% {
         transform: translateY(0px);
@@ -430,6 +500,7 @@
 }
 
 @-o-keyframes fly-y {
+
     0%,
     100% {
         transform: translateY(0px);
@@ -441,6 +512,7 @@
 }
 
 @-webkit-keyframes fly-y {
+
     0%,
     100% {
         transform: translateY(0px);
@@ -452,6 +524,7 @@
 }
 
 @keyframes fly-x {
+
     0%,
     100% {
         transform: translateX(0px) scaleX(1);
@@ -478,6 +551,7 @@
 }
 
 @-moz-keyframes fly-x {
+
     0%,
     100% {
         transform: translateX(0px) scaleX(1);
@@ -504,6 +578,7 @@
 }
 
 @-webkit-keyframes fly-x {
+
     0%,
     100% {
         transform: translateX(0px) scaleX(1);
@@ -530,6 +605,7 @@
 }
 
 @-o-keyframes fly-x {
+
     0%,
     100% {
         transform: translateX(0px) scaleX(1);
