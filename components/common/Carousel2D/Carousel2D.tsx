@@ -61,7 +61,7 @@ const Carousel2D: React.FC<{ list: any[] }> = ({ list }) => {
                             src={`/images/images/${item.image}.png`}
                             className={cx("avatar")}
                         />
-                        <img src={"/images/images/team-laurel.png"} className={cx("border")} />
+                        <img src={"/images/images/team-circle.png"} className={cx("border")} />
                         <a href={item.linkedin} target="_blank">
                             <img src={"/images/images/team-linkedin.png"} className={cx("linkedin")} />
                         </a>

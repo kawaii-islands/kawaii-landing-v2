@@ -6,6 +6,9 @@ import Header from "../components/common/Header/Header";
 import Landing from "../components/Landing/Landing";
 import styles from "../styles/Home.module.css";
 import { useEffect } from "react";
+import FullCalendar from "@fullcalendar/react";
+import interactionPlugin from "@fullcalendar/interaction";
+import timeGridPlugin from "@fullcalendar/timegrid";
 
 const Home: NextPage = () => {
     useEffect(() => {
