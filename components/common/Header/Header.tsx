@@ -13,6 +13,7 @@ const cx = cn.bind(styles);
 
 const Header: React.FC<{}> = () => {
     const isMobileScreenLTE = useCheckMobileScreen(1199);
+    const isMobile = useCheckMobileScreen(768);
     const router = useRouter();
 
     const navbar = useRef();
@@ -51,6 +52,29 @@ const Header: React.FC<{}> = () => {
                 </b>{" "}
                 <CopyToClipboard
                     text={"0x257a8d1E03D17B8535a182301f15290F11674b53"}
+                    onCopy={() => toast.success("Copied!")}
+                >
+                    <img
+                        src="/images/icons/copy_white.svg"
+                        style={{ marginLeft: 5, cursor: "pointer" }}
+                    />
+                </CopyToClipboard>{" "}
+                {isMobile ?  <br />: "|"} MILKY{" "}
+                <b>
+                    <a
+                        href="https://bscscan.com/address/0x19661223c71337121c58363152df8f35ee4be399"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{
+                            textDecoration: "none",
+                            color: " #00fff0"
+                        }}
+                    >
+                        0x196...e399
+                    </a>
+                </b>{" "}
+                <CopyToClipboard
+                    text={"0x19661223c71337121c58363152df8f35ee4be399"}
                     onCopy={() => toast.success("Copied!")}
                 >
                     <img
